@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.corpo {
+    display: flex;
+    flex-direction: column;
+    background-image: url(imagens/background.jpg);
+}
+
+.perfil {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.perfil-img {
+    max-width: 250px;
+    border-radius: 100%;
+    padding: 5px;
+    border: 5px solid #363636;
+}
+
+.perfil-link {
+    margin-top: 8px;
+    font-size: 25px;
+    color: #363636;
+    padding-bottom: 50px;
+    border-bottom: 3px solid #363636;
+}
+
+.nave {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    gap: 50px;
+    font-size: 20px;
+}
+
+.nave-portifolio {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    width: 250px;
+    align-items: center;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    /*box-shadow: 4px 5px 4px black;*/
+    box-shadow: 2px 3px 0px #888, 4px 6px 0px #333;
+    border: 2px solid #333;
+}
+
+.img-portifolio {
+    height: 45px;
+    margin-right: 5px;
+}
+
+.nave-linkedin {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    width: 250px;
+    align-items: center;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    box-shadow: 2px 3px 0px #888, 4px 6px 0px #333;
+    border: 2px solid #333;}
+
+.img-linkedin {
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 9px;
+}
+
+.nave-whatsapp {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    width: 250px;
+    align-items: center;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    box-shadow: 2px 3px 0px #888, 4px 6px 0px #333;
+    border: 2px solid #333;}
+
+.img-whatsapp {
+    height: 35px;
+    margin-right: 10px;
+}
+
+.nave-github {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    width: 250px;
+    align-items: center;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    box-shadow: 2px 3px 0px #888, 4px 6px 0px #333;
+    border: 2px solid #333;
+}
+
+.img-github {
+    height: 35px;
+    margin-right: 10px;
+}
+
+.nave-portifolio:hover {
+    background-color: gray;
+    box-shadow:  1px 1px 0px gray;
+}
+
+.nave-linkedin:hover {
+    background-color: gray;
+    box-shadow:  1px 1px 0px gray;
+}
+
+.nave-whatsapp:hover {
+    background-color: gray;
+    box-shadow:  1px 1px 0px gray;
+}
+
+.nave-github:hover {
+    background-color: gray;
+    box-shadow:  1px 1px 0px gray;
+}
