@@ -6,18 +6,30 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body, html {
+    height: 100%;
+}
+
 .corpo {
     display: flex;
     flex-direction: column;
-    background-image: url(imagens/background.jpg);
+    background-image: url("imagens/background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    justify-content: space-evenly;
 }
 
+
+/* Perfil */
+
 .perfil {
-    margin-top: 30px;
+    height: 40vh;
+    margin-top: 7vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
+    justify-content: center;
 }
 
 .perfil-img {
@@ -31,107 +43,134 @@
     margin-top: 8px;
     font-size: 25px;
     color: #363636;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
     border-bottom: 3px solid #363636;
 }
+
+/* Navegação */
 
 .nave {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 60px;
     gap: 50px;
     font-size: 20px;
+    margin-bottom: 7vh;
+    height: 50vh;
+    justify-content: space-evenly;
 }
 
-.nave-portifolio {
+.nave > a {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     padding: 15px;
     width: 250px;
     align-items: center;
     border-radius: 15px;
     background-color: white;
     color: black;
-    /*box-shadow: 4px 5px 4px black;*/
     box-shadow: 2px 3px 0px #888, 4px 6px 0px #333;
     border: 2px solid #333;
 }
+
 
 .img-portifolio {
     height: 45px;
-    margin-right: 5px;
+    margin-right: 17px;
 }
 
-.nave-linkedin {
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    width: 250px;
-    align-items: center;
-    border-radius: 15px;
-    background-color: white;
-    color: black;
-    box-shadow: 2px 3px 0px #888, 4px 6px 0px #333;
-    border: 2px solid #333;}
 
 .img-linkedin {
     height: 30px;
-    margin-right: 10px;
-    margin-bottom: 9px;
+    margin: 0px 40px 9px 6px;
 }
 
-.nave-whatsapp {
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    width: 250px;
-    align-items: center;
-    border-radius: 15px;
-    background-color: white;
-    color: black;
-    box-shadow: 2px 3px 0px #888, 4px 6px 0px #333;
-    border: 2px solid #333;}
 
 .img-whatsapp {
     height: 35px;
-    margin-right: 10px;
-}
-
-.nave-github {
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    width: 250px;
-    align-items: center;
-    border-radius: 15px;
-    background-color: white;
-    color: black;
-    box-shadow: 2px 3px 0px #888, 4px 6px 0px #333;
-    border: 2px solid #333;
+    margin: 0px 30px 0px 6px;
 }
 
 .img-github {
     height: 35px;
-    margin-right: 10px;
+    margin: 0px 40px 0px 6px;
 }
 
-.nave-portifolio:hover {
+.nave > a:hover {
     background-color: gray;
     box-shadow:  1px 1px 0px gray;
 }
 
-.nave-linkedin:hover {
-    background-color: gray;
-    box-shadow:  1px 1px 0px gray;
-}
 
-.nave-whatsapp:hover {
-    background-color: gray;
-    box-shadow:  1px 1px 0px gray;
-}
+/* Media Query */
+@media screen and (max-height: 1024px) and (max-width: 1024px) {
+    .corpo {
+        background-position: 50% 30%;
+        background-size: auto;
+    }
 
-.nave-github:hover {
-    background-color: gray;
-    box-shadow:  1px 1px 0px gray;
+    .perfil {
+        gap: 10px;
+    }
+    
+    .perfil-img {
+        max-width: 200px;
+        border: 3px solid #363636;
+    }
+    
+    .perfil-link {
+        margin-top: 5px;
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+
+    .nave {
+        margin-top: 25px;
+        gap: 30px;
+        font-size: 20px;
+    }
+
+    .nave > a {
+        padding: 15px;
+        width: 250px;
+    }
+
+    .nave-linkedin, .nave-whatsapp {
+        height: 65px;
+    }
+
+
+    .img-portifolio {
+        height: 35px;
+        margin-right: 25px;
+    }
+    
+    
+    .img-linkedin {
+        height: 25px;
+        margin: 0px 45px 4px 6px;
+    }
+    
+    
+    .img-whatsapp {
+        height: 25px;
+        margin: 0px 38px 0px 6px;
+    }
+    
+
+    .img-github {
+        height: 30px;
+        margin: 0px 48px 0px 6px;
+
+    }
+
+    .nave > a:hover {
+        background-color: white;
+        box-shadow: 2px 3px 0px #888, 4px 6px 0px #333;
+    }
+
+    .nave > a:active {
+        background-color: gray;
+        box-shadow:  1px 1px 0px gray;
+    }
 }
